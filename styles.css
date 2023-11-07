@@ -3,93 +3,93 @@ body, html {
     padding: 0;
     font-family: Arial, sans-serif;
     background: #fff;
+    overflow-x: hidden; /* Empêche le défilement horizontal */
 }
 
 .top-bar {
     background-color: #005f60;
     color: white;
-    padding: 10px 0;
+    padding: 20px 0;
 }
 
 .top-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 20px;
+    padding: 0 40px;
 }
 
 .logo {
-    font-size: 1.5em;
+    font-size: 2em; /* Taille du logo */
     font-weight: bold;
+    color: white;
 }
 
 .menu a {
     color: white;
     text-decoration: none;
-    margin-left: 20px;
+    margin: 0 20px;
+    font-size: 1.2em;
 }
 
 .hero {
     display: flex;
-    justify-content: space-around;
     align-items: center;
     background: url('./image/background.jpg') no-repeat center center/cover;
-    height: 500px; /* Adjust height as necessary */
+    height: 100vh; /* Hauteur de la vue complète */
     padding: 0 20px;
+    position: relative;
 }
 
 .search-area {
-    background: white;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    background: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    margin-left: 5%; /* Ajustez la marge à gauche */
+    width: 30%; /* Largeur de la zone de recherche */
 }
 
-.search-input {
-    display: block;
+.search-input, .date-picker {
     width: 100%;
-    padding: 10px;
     margin: 10px 0;
+    padding: 15px;
+    font-size: 1.1em;
     border: 1px solid #ddd;
     border-radius: 5px;
 }
 
-.date-picker {
-    cursor: pointer;
-}
-
 .search-btn {
-    display: block;
     width: 100%;
-    padding: 10px;
+    padding: 15px;
     background-color: #28a745;
     color: white;
     border: none;
     border-radius: 5px;
-    margin-top: 10px;
     cursor: pointer;
+    margin-top: 20px;
 }
 
 .search-btn:hover {
     background-color: #218838;
 }
 
-.hero-text h1 {
-    color: #333;
-    font-size: 2.5em;
-}
-
-.hero-text p {
-    color: #333;
-    font-size: 1em;
+.hero-text {
+    position: absolute;
+    right: 5%; /* Ajustez selon votre besoin */
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 30%; /* Ajustez la largeur maximale du texte */
+    color: white;
+    text-align: right;
 }
 
 footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 10px 0;
-    position: relative;
+    padding: 20px 0;
+    position: fixed;
     bottom: 0;
     width: 100%;
 }
