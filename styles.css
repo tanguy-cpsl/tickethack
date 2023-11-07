@@ -3,7 +3,8 @@ body, html {
     padding: 0;
     font-family: Arial, sans-serif;
     background: #fff;
-    overflow-x: hidden; /* Empêche le défilement horizontal */
+    overflow-x: hidden;
+    
 }
 
 .top-bar {
@@ -16,11 +17,11 @@ body, html {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 40px;
+    padding: 0 5%; /* Utilisez un pourcentage de la largeur de la fenêtre pour le padding */
 }
 
 .logo {
-    font-size: 2em; /* Taille du logo */
+    font-size: 2em;
     font-weight: bold;
     color: white;
 }
@@ -34,20 +35,30 @@ body, html {
 
 .hero {
     display: flex;
-    align-items: center;
+    flex-direction: column; /* Empilez les éléments verticalement */
+    justify-content: center;
+    align-items: center; /* Centre les éléments horizontalement */
     background: url('./image/background.jpg') no-repeat center center/cover;
-    height: 100vh; /* Hauteur de la vue complète */
-    padding: 0 20px;
-    position: relative;
+    height: 100vh;
+    padding: 0 5%; /* Utilisez un pourcentage pour le padding */
+    
 }
 
 .search-area {
     background: rgba(255, 255, 255, 0.9);
-    padding: 40px;
+    padding: 2em;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    margin-left: 5%; /* Ajustez la marge à gauche */
-    width: 30%; /* Largeur de la zone de recherche */
+    margin-bottom: 2em; /* Ajoutez de l'espace entre la zone de recherche et le texte */
+    width: 40%; /* Définissez une largeur pour la zone de recherche */
+}
+.blocdeux {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 4em;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    margin-bottom: 4em; /* Ajoutez de l'espace entre la zone de recherche et le texte */
+    width: 40%; /* Définissez une largeur pour la zone de recherche */
 }
 
 .search-input, .date-picker {
@@ -67,7 +78,6 @@ body, html {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 20px;
 }
 
 .search-btn:hover {
@@ -75,13 +85,9 @@ body, html {
 }
 
 .hero-text {
-    position: absolute;
-    right: 5%; /* Ajustez selon votre besoin */
-    top: 50%;
-    transform: translateY(-50%);
-    max-width: 30%; /* Ajustez la largeur maximale du texte */
-    color: white;
-    text-align: right;
+    text-align: center;
+    width: 100%; /* Définissez une largeur pour le texte */
+    color: #ddd;
 }
 
 footer {
@@ -92,4 +98,26 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+.info-area {
+    background: rgba(255, 255, 255, 0.9); /* ou autre couleur selon votre design */
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    width: 30%; /* ou la taille souhaitée */
+    /* Placez le bloc à droite ou comme nécessaire */
+}
+
+/* Si vous voulez positionner les deux blocs côte à côte avec flexbox */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Espace entre les éléments */
+}
+
+/* Assurez-vous que les textes sont bien lisibles */
+.info-area p {
+    color: #333; /* ou autre couleur pour le contraste */
+    font-size: 1em; /* ou la taille souhaitée */
 }
