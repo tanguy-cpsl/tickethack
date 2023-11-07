@@ -5,11 +5,12 @@ body, html {
     background: #fff;
     overflow-x: hidden;
     
+    
 }
 
 .top-bar {
-    background-color: #005f60;
-    color: white;
+    background-color: #FFFDFF;
+    color: rgb(0, 0, 0);
     padding: 20px 0;
 }
 
@@ -23,11 +24,11 @@ body, html {
 .logo {
     font-size: 2em;
     font-weight: bold;
-    color: white;
+    color: #7A9F95;
 }
 
 .menu a {
-    color: white;
+    color: #18191A;
     text-decoration: none;
     margin: 0 20px;
     font-size: 1.2em;
@@ -39,32 +40,30 @@ body, html {
     justify-content: center;
     align-items: center; /* Centre les éléments horizontalement */
     background: url('./image/background.jpg') no-repeat center center/cover;
-    height: 100vh;
-    padding: 0 5%; /* Utilisez un pourcentage pour le padding */
+    height: 90vh;
+    padding: 2px 5%;
+
     
+}
+.hero-content {
+display: flex;
+justify-content: space-around;
 }
 
 .search-area {
     background: rgba(255, 255, 255, 0.9);
-    padding: 2em;
+    padding: 23px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     margin-bottom: 2em; /* Ajoutez de l'espace entre la zone de recherche et le texte */
     width: 40%; /* Définissez une largeur pour la zone de recherche */
 }
-.blocdeux {
-    background: rgba(255, 255, 255, 0.9);
-    padding: 4em;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    margin-bottom: 4em; /* Ajoutez de l'espace entre la zone de recherche et le texte */
-    width: 40%; /* Définissez une largeur pour la zone de recherche */
-}
+
 
 .search-input, .date-picker {
     width: 100%;
     margin: 10px 0;
-    padding: 15px;
+    padding: 5px;
     font-size: 1.1em;
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -73,7 +72,7 @@ body, html {
 .search-btn {
     width: 100%;
     padding: 15px;
-    background-color: #28a745;
+    background-color: #469E86;
     color: white;
     border: none;
     border-radius: 5px;
@@ -87,7 +86,9 @@ body, html {
 .hero-text {
     text-align: center;
     width: 100%; /* Définissez une largeur pour le texte */
-    color: #ddd;
+    color: #ffffff;
+    margin-bottom: 60px;
+    margin-block-start: -220px;
 }
 
 footer {
@@ -100,24 +101,12 @@ footer {
     width: 100%;
 }
 .info-area {
-    background: rgba(255, 255, 255, 0.9); /* ou autre couleur selon votre design */
-    padding: 40px;
+    background: #ffffffe6; /* ou autre couleur selon votre design */
+    padding: 10px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    width: 30%; /* ou la taille souhaitée */
-    /* Placez le bloc à droite ou comme nécessaire */
+    width: 40%; /* ou la taille souhaitée */
+    margin-bottom: 2em;
+    background-image: url('./image/train.png')
 }
 
-/* Si vous voulez positionner les deux blocs côte à côte avec flexbox */
-.hero {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px; /* Espace entre les éléments */
-}
-
-/* Assurez-vous que les textes sont bien lisibles */
-.info-area p {
-    color: #333; /* ou autre couleur pour le contraste */
-    font-size: 1em; /* ou la taille souhaitée */
-}
